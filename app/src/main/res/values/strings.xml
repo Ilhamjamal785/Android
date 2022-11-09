@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Praktikum1</string>
+    <string name="width">Lebar</string>
+    <string name="height">Tinggi</string>
+    <string name="calculate">Hitung</string>
+    <string name="result">result</string>
+    <string name="length">Panjang</string>
+    <string name="biodata">biodata</string>
+    <string name="nama_depan">namdep</string>
+    <string name="nama_belakang">nambel</string>
+    <string name="tanggal_lahir">tgl</string>
+    <string name="alamat">almt</string>
+    <string name="nomor_telepon">no.telp</string>
+</resources>
