@@ -1,119 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".BioActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif-monospace"
-        android:gravity="center"
-        android:padding="20px"
-        android:text="@string/biodata"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="182sp"
-            android:layout_height="wrap_content"
-            android:padding="10px"
-            android:text="@string/nama_depan" />
-
-        <TextView
-            android:layout_width="191dp"
-            android:layout_height="wrap_content"
-            android:text="@string/nama_belakang" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/edt_namaDepan"
-            android:layout_width="182sp"
-            android:layout_height="match_parent"
-            android:inputType="text"
-            android:lines="1"
-            android:padding="10px" />
-
-        <EditText
-            android:id="@+id/edt_namaBelakang"
-            android:layout_width="190dp"
-            android:layout_height="35dp"
-            android:inputType="text"
-            android:lines="1"
-            android:padding="10px" />
-
-    </LinearLayout>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10px"
-        android:text="@string/tanggal_lahir" />
-
-    <EditText
-        android:id="@+id/edt_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:lines="1"
-        android:padding="10px"
-        android:text="Pilih Disini"
-        android:gravity="center"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10px"
-        android:text="@string/alamat" />
-
-    <EditText
-        android:id="@+id/edt_alamat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:lines="1"
-        android:padding="10px" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10px"
-        android:text="@string/nomor_telepon" />
-
-    <EditText
-        android:id="@+id/edt_phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:lines="1"
-        android:padding="10px" />
-
-    <Button
-        android:id="@+id/btn_submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Submit"
-        android:paddingBottom="20sp"/>
-
-    <TextView
-        android:id="@+id/tv_result"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/result"
-        android:textSize="20sp" />
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Biodata"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_input_namaDepan"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+
+                android:hint="Nama Depan" />
+
+            <EditText
+                android:id="@+id/et_input_namaBelakang"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Nama Belakang" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir: "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_input_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="DD-MM-YYYY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat: "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_input_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Contoh: (Jl Danau Segara anak Rt99 Rw78 Kedungkandang Kota Malang Jawa Timur)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telepon: "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_input_nomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Contoh: (085155225890)"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Output Biodata"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_output_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Nama: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_output_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Tanggal Lahir: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_output_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Alamat: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_output_nomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Nomor Telp:  "
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="Simpan"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</ScrollView>

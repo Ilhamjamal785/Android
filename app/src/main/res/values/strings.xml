@@ -6,9 +6,9 @@
     <string name="result">result</string>
     <string name="length">Panjang</string>
     <string name="biodata">biodata</string>
-    <string name="nama_depan">namdep</string>
-    <string name="nama_belakang">nambel</string>
-    <string name="tanggal_lahir">tgl</string>
-    <string name="alamat">almt</string>
+    <string name="nama_depan">nama depan</string>
+    <string name="nama_belakang">nama belakang</string>
+    <string name="tanggal_lahir">tanggal</string>
+    <string name="alamat">alamat</string>
     <string name="nomor_telepon">no.telp</string>
 </resources>
